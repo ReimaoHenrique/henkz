@@ -1,0 +1,28 @@
+/* Container do vídeo */
+.videoContainer {
+  position: relative;
+  width: 100%; /* Garante que ocupe toda a largura */
+  height: 50vh; /* Define que o vídeo ocupará apenas 30% da altura da tela */
+  overflow: hidden;
+}
+
+/* Ajuste do vídeo para cobrir o container corretamente */
+.videoBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz com que o vídeo cubra todo o espaço do container */
+  transform: translate(-50%, -50%); /* Centraliza o vídeo corretamente */
+}
+
+/* Filtro roxo sobre o vídeo */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 0, 128, 0.5); /* Filtro roxo translúcido */
+}

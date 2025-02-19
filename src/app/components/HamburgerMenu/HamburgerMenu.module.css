@@ -1,0 +1,45 @@
+.container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Só exibir no mobile */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.backgroundSquare {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+}
+
+.vinylContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.vinylDisc {
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

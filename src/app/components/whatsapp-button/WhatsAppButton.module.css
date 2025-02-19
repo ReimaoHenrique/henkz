@@ -1,0 +1,63 @@
+/* WhatsAppButton.module.css */
+.link {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0px 0px 72px 0px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 10px 15px 15px;
+  border-radius: 9999px; /* WhatsAppButton.module.css */
+  .link {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 0 30px 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Cor inicial do texto */
+    padding: 10px 10px; /* Ajuste para garantir que o conteúdo esteja centralizado */
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
+    width: fit-content; /* Ajuste para o tamanho do conteúdo */
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    margin-right: 0.5rem; /* Espaçamento entre ícone e texto */
+  }
+
+  .button-text {
+    transition: color 0.3s ease-in-out;
+  }
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.icon-container {
+  margin-right: 0.5rem; /* Ajuste o espaçamento conforme necessário */
+}
+
+.button-text {
+  transition: color 0.3s ease-in-out;
+}

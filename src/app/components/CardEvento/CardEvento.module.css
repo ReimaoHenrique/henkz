@@ -1,0 +1,117 @@
+/* Estilos gerais do cartão */
+.card {
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardExpanded {
+  transform: scale(1.1);
+}
+
+/* Container da imagem principal (foto do evento no topo) */
+.cardImageContainer {
+  width: 100%;
+  height: auto;
+}
+
+.cardMainImage {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Texto abaixo da imagem */
+.cardContent {
+  padding: 15px;
+  color: white; /* Garante que o texto fique visível */
+  font-size: 1rem;
+}
+
+/* Título do evento */
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Descrição/review */
+.cardReview {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Estrelas de avaliação */
+.cardStars {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+/* Fotos adicionais (caso existam) */
+.cardAdditionalPhotos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.cardAdditionalPhotos img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardReview {
+    font-size: 0.9rem;
+  }
+  /* Fullscreen Photo */
+  .fullscreenPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .fullscreenPhoto img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fullscreenPhoto:hover img {
+    transform: scale(1.05);
+  }
+}

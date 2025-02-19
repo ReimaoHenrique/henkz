@@ -1,0 +1,22 @@
+/* About.module.css */
+
+.container {
+  max-width: 1200px; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cartões se movam para a linha seguinte se necessário */
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+  gap: 20px; /* Espaçamento entre os cartões */
+}

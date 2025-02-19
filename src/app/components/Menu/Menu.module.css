@@ -1,0 +1,46 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  border-radius: 0.5rem;
+  background-color: #180012c7;
+  left: 0;
+  margin: 40vh 0 0 1vh;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #610b78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: left;
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+}
+
+.button span {
+  display: none;
+}
+
+.button[data-clicked="true"] {
+  width: 150px;
+}
+
+.button[data-clicked="true"] span {
+  display: inline;
+}
+
+.button:hover {
+  background-color: #0057b3;
+  border: 1px solid #610b78;
+}

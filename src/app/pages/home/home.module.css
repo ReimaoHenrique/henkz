@@ -1,0 +1,98 @@
+/* Contêiner principal */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container do vídeo */
+.carouselContainer {
+  width: 100vw; /* Garante que ocupe toda a largura da tela */
+  height: 10vh;
+  max-width: 100%; /* Remove qualquer limitação de largura */
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+.title {
+  text-align: center;
+  margin: 50vh 0 0 0;
+  color: aliceblue;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+
+/* Estilos do álbum */
+.albumContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #0f0101cc;
+  border-radius: 10px;
+}
+
+.albumText {
+  flex: 1;
+  color: white;
+}
+
+.albumText h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.albumText p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Botão */
+.actionButton {
+  padding: 10px 20px;
+  background-color: #610b78;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actionButton:hover {
+  background-color: #7a009f;
+  border: 1px solid #610b78;
+}
+
+/* Imagem do álbum */
+.albumImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.albumImage img {
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .albumContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .albumText {
+    margin: 0 0 3rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .albumImage img {
+    height: 600px;
+    width: 500px;
+  }
+}

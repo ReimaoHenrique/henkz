@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Usa 100% da largura da viewport */
+  height: 100vh; /* Usa 100% da altura da viewport */
+  background-image: url("/images/neon.jpg");
+  background-color: #000; /* Cor de fundo para evitar áreas brancas */
+  background-size: cover; /* Garante que a imagem cubra a tela */
+  background-position: center;
+  z-index: -1; /* Fica atrás do conteúdo */
+  filter: blur(10px); /* Aplica o efeito de desfoque */
 }
